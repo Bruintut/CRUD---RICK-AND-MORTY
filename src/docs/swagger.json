@@ -15,7 +15,7 @@
         "description": "Test and development API"
       },
       {
-        "url": "https://api-rick-and-morty-crud.herokuapp.com/",
+        "url": "https://api-rick-and-morty-crud.herokuapp.com",
         "description": "Production API"
       }
     ],
