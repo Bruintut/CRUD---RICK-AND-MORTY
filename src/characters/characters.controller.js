@@ -31,9 +31,9 @@ const createCharacterController = async (req, res) =>{
 
   if (
     !character || 
+    !character.user || 
     !character.name || 
-    !character.skill || 
-    !character.picture
+    !character.imageUrl
     ) {
     return res.status(400).send({message: "Envie todos os campos do cavaleiro!"});
   }
@@ -58,9 +58,9 @@ const updateCharacterController = async (req, res) => {
   
   if (
     !characterEdit || 
+    !characterEdit.user || 
     !characterEdit.name || 
-    !characterEdit.skill || 
-    !characterEdit.picture
+    !characterEdit.imageUrl
     ) {
     return res.status(400).send({message: "Envie todos os campos do cavaleiro!"});
   }
