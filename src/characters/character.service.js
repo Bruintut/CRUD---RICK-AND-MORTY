@@ -1,5 +1,3 @@
-
-
   const Character = require('../characters/Character')
 
 
@@ -14,6 +12,11 @@
     return character;
      
   };
+
+  const findByNameCharacterService = async (name) => {
+    const character = await character.findOne({name: name});
+    return character
+  }
 
   const createCharacterService = async (newCharacter) =>{
     const newId = await Character.create(newCharacter);
@@ -33,6 +36,7 @@
   module.exports = {
     findAllCharactersService,
     findByIdCharacterService,
+    findByNameCharacterService,
     createCharacterService,
     updatenewCharacterService,
     deleteCharacterService
