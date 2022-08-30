@@ -33,7 +33,7 @@ const searchCharacterController = async (req, res) =>{
   if (findByName) {
     res.status(400).send({ message: "Nome já registrado" });
   } else {
-    const created = await charactersServices.createCharactersService({user, name, imageUrl,});
+    const created = await charactersService.createCharactersService({user, name, imageUrl,});
   };
 };
 
