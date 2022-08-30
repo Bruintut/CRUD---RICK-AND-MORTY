@@ -20,11 +20,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "nodemon index",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "nodemon src/index",
+    "start": "node src/index"
+    
   },
   "eslintConfig": {
     "extends": [
