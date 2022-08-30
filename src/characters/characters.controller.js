@@ -28,7 +28,7 @@ const findByIdCharacterController = async (req, res) =>{
 
 const searchCharacterController = async (req, res) =>{
   const {user, name, imageUrl} = req.body;
-  const findbyName = await charactersService.findByNameCharacterService(name);
+  const findByName = await charactersService.findByNameCharacterService(name);
 
   if (findByName) {
     res.status(400).send({ message: "Nome já registrado" });
