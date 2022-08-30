@@ -440,7 +440,7 @@
             "password": {
               "type": "string"
             },
-            "photo": {
+            "avatar": {
               "type": "string"
             }
           }
